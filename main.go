@@ -1,5 +1,15 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/AmirMirzayi/arvancloud-interview/pkg"
+)
+
 func main() {
-	println("hi amir")
+	processingQueue := pkg.NewMap()
+	processingQueue.SetValue("amir", 30)
+	fmt.Println(processingQueue.GetValue("amir"))
+	fmt.Println(processingQueue.ExistedKey("amirs"))
+
 }
